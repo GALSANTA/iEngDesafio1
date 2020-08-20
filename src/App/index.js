@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Building from '../components/Building';
 import Window from '../components/Window';
+import ButtonSwitch from '../components/ButtonSwitch';
 import './style.css';
 
 function City() {
@@ -21,9 +22,9 @@ function City() {
 
         const { latitude, longitude } = coords;
 
-        var d = await axios.get(`https://api.sunrise-sunset.org/json?lat=${latitude}&lng=${longitude}&date=today`);
-        var sunrise = d.data.results.sunrise.split(" ")[0];
-        var sunset = d.data.results.sunset.split(" ")[0];
+        var dados = await axios.get(`https://api.sunrise-sunset.org/json?lat=${latitude}&lng=${longitude}&date=today`);
+        var sunrise = dados.data.results.sunrise.split(" ")[0];
+        var sunset = dados.data.results.sunset.split(" ")[0];
 
         var data = new Date();
  
@@ -50,6 +51,8 @@ function City() {
                 <Window/>
                 <Window/>
             </Building>
+            <ButtonSwitch/>
+
         </div>
     )
 }
