@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Building from '../components/Building';
 import Window from '../components/Window';
-import ButtonSwitch from '../components/ButtonSwitch';
+import {LightContext} from '../providers/lightContext';
 import './style.css';
 
 function City() {
@@ -27,11 +27,11 @@ function City() {
         var sunset = dados.data.results.sunset.split(" ")[0];
 
         var data = new Date();
- 
+
         var hora = data.getHours();
-        
+
         if (hora > 11 && hora <= 23) {
-            if (hora >= parseInt(sunrise[0]) && hora< parseInt(sunset[0]) + 12) {
+            if (hora >= parseInt(sunrise[0]) && hora < parseInt(sunset[0]) + 12) {
                 setDia('dia');
             } else {
                 setDia('noite');
@@ -47,12 +47,12 @@ function City() {
 
     return (
         <div className={`row cidade ${data}`}>
-            <Building>
-                <Window/>
-                <Window/>
-            </Building>
-            <ButtonSwitch/>
-
+            <LightContext>
+                <Building>
+                    <Window />
+                    <Window />
+                </Building>
+            </LightContext>
         </div>
     )
 }

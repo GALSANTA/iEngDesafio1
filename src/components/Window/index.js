@@ -1,7 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { Context } from '../../providers/lightContext';
 import './style.css';
 
 export default function Window() {
+    
+    const allLights = useContext(Context);
+    
+    useEffect(handleLight, [allLights]);
 
     const [light, setLight] = useState('apagada');
 
