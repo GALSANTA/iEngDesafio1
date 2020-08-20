@@ -1,0 +1,17 @@
+body, html{
+    height: 100%;
+}
+.cidade {
+    min-height:630px;
+}
+.dia {
+    background-color: #283593;
+    transition: all 0.5s;
+    transition-timing-function: linear;
+    
+}
+.noite {
+    background-color: #424242;
+    transition: all 0.5s;
+    transition-timing-function: linear;
+}
