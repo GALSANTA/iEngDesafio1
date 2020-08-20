@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Building from '../components/Building';
+import Window from '../components/Window';
 import './style.css';
 
 function City() {
@@ -45,7 +46,10 @@ function City() {
 
     return (
         <div className={`row cidade ${data}`}>
-            <Building>Janelas</Building>
+            <Building>
+                <Window/>
+                <Window/>
+            </Building>
         </div>
     )
 }
