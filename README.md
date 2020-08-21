@@ -13,7 +13,7 @@
 * Você precisa ter uma conexão com a internet
 
 
-# Instalação e Configuração
+# Instalação e Execução
 
 <b>1. Na pasta do projeto rode o comando no cmd.</b>
 
@@ -21,7 +21,7 @@
 npm install
 ```
 
-<b>3. Depois de terminar a instalação das dependências rode o seguinte comando no cmd: </b>
+<b>2. Depois de terminar a instalação das dependências rode o seguinte comando no cmd: </b>
 
 ```
 npm start
