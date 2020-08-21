@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Building from '../components/Building';
 import Window from '../components/Window';
-import {LightContext} from '../providers/lightContext';
+import { LightContext } from '../providers/lightContext';
 import './style.css';
 
 function City() {
@@ -32,14 +32,18 @@ function City() {
 
         if (hora > 11 && hora <= 23) {
             if (hora >= parseInt(sunrise[0]) && hora < parseInt(sunset[0]) + 12) {
+                document.title = "DIA - segundo a api";
                 setDia('dia');
             } else {
+                document.title = "NOITE - segundo a api";
                 setDia('noite');
             }
         } else {
             if (hora >= parseInt(sunrise[0]) && hora < parseInt(sunset[0]) + 12) {
+                document.title = "DIA - segundo a api";
                 setDia('dia');
             } else {
+                document.title = "NOITE - segundo a api";
                 setDia('noite');
             }
         }
@@ -48,6 +52,10 @@ function City() {
     return (
         <div className={`row cidade ${data}`}>
             <LightContext>
+                <Building>
+                    <Window />
+                    <Window />
+                </Building>
                 <Building>
                     <Window />
                     <Window />

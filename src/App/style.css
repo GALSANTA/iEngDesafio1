@@ -5,13 +5,14 @@ body, html{
     min-height:630px;
 }
 .dia {
-    background-color: #283593;
+    background-color: #87ceeb;
     transition: all 0.5s;
     transition-timing-function: linear;
-    
+    background-image: url("./img/nightSky.svg"); 
 }
 .noite {
-    background-color: #424242;
+    background-color: #0e0618;
     transition: all 0.5s;
     transition-timing-function: linear;
+    background-image: url("./img/nightSky.svg");
 }
