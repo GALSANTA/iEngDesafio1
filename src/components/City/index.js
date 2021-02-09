@@ -8,7 +8,7 @@ function City(props) {
 
     React.useEffect(() => {
         navigator.geolocation.watchPosition(dayChange, (e) => { console.log(e); });
-    });
+    },[]);
 
     async function dayChange({ coords }) {
 
