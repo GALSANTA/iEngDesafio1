@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import City from './app/index';
+import App from './App/index';
 
-ReactDOM.render(<City/>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 

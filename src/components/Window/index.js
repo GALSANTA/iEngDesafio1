@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { Context } from '../../providers/lightContext';
+import { Context } from '../../providers/LightContext';
 import './style.css';
 
 export default function Window() {
