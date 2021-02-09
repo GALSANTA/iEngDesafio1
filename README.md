@@ -19,19 +19,24 @@
 
 # Instalação e Execução
 
-<b>1. execute o comando pelo seu terminal:</b>
+<b>1. Execute o comando pelo seu terminal:</b>
 
 ```
 git clone https://github.com/GALSANTA/iEngDesafio1
 ```
+<b>2. Mude no seu terminal para a pasta do projeto:</b>
 
-<b>2. Na pasta do projeto execute o comando:</b>
+```
+cd iEngDesafio1
+```
+
+<b>3. Na pasta do projeto execute o comando:</b>
 
 ```
 npm install
 ```
 
-<b>3. Depois de terminar a instalação das dependências rode o seguinte comando no cmd: </b>
+<b>4. Depois de terminar a instalação das dependências rode o seguinte comando no cmd: </b>
 
 ```
 npm start
